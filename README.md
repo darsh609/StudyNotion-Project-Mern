@@ -3,9 +3,8 @@
 
 
 # Study Notion
-
+[Website Link](https://darshstudynotion1718.vercel.app/)
 StudyNotion is a full-fledged MERN stack edtech platform where instructors can upload courses and lectures, and students can purchase and learn courses. The platform allows students to give feedback, instructors to manage course content, and admins to categorize courses. Users can sign up, log in, change their password, and engage with educational content.
-
 
 
 ## Description
@@ -57,7 +56,7 @@ Prerequisites:
 Make sure you have Node.js installed on your machine.
 ```bash
 
-  git clone https://github.com/yourusername/studynotion.git
+git clone https://github.com/yourusername/studynotion.git
 cd studynotion
 
 cd server
