@@ -4,6 +4,10 @@ import ReactStars from "react-rating-stars-component"
 import SwiperCore, { Autoplay, Pagination,FreeMode } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+
+
+
+
 // Import Swiper styles
 import "swiper/css"
 import "swiper/css/free-mode"

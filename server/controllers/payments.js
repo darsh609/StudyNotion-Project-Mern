@@ -138,6 +138,7 @@ exports.sendPaymentSuccessEmail = async (req, res) => {
   }
 }
 
+
 // enroll the student in the courses
 const enrollStudents = async (courses, userId, res) => {
   if (!courses || !userId) {
