@@ -33,7 +33,8 @@ export function sendOtp(email, navigate) {
 
       toast.success("OTP Sent Successfully")
       navigate("/verify-email")
-    } catch (error) {
+    } 
+    catch (error) {
       console.log("SENDOTP API ERROR............", error)
       toast.error("Could Not Send OTP")
     }
@@ -73,7 +74,8 @@ export function signUp(
       }
       toast.success("Signup Successful")
       navigate("/login")
-    } catch (error) {
+    } 
+    catch (error) {
       console.log("SIGNUP API ERROR............", error)
       toast.error("Signup Failed")
       navigate("/signup")
@@ -107,7 +109,8 @@ export function login(email, password, navigate) {
       dispatch(setUser({ ...response.data.user, image: userImage }))
       localStorage.setItem("token", JSON.stringify(response.data.token))
       navigate("/dashboard/my-profile")
-    } catch (error) {
+    } 
+    catch (error) {
       console.log("LOGIN API ERROR............", error)
       toast.error("Login Failed")
     }
@@ -133,7 +136,8 @@ export function getPasswordResetToken(email, setEmailSent) {
 
       toast.success("Reset Email Sent")
       setEmailSent(true)
-    } catch (error) {
+    } 
+    catch (error) {
       console.log("RESETPASSTOKEN ERROR............", error)
       toast.error("Failed To Send Reset Email")
     }
@@ -161,7 +165,8 @@ export function resetPassword(password, confirmPassword, token, navigate) {
 
       toast.success("Password Reset Successfully")
       navigate("/login")
-    } catch (error) {
+    } 
+    catch (error) {
       console.log("RESETPASSWORD ERROR............", error)
       toast.error("Failed To Reset Password")
     }

@@ -12,10 +12,8 @@ import Tab from "../../Common/Tab"
 function SignupForm() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
-
   // student or instructor
   const [accountType, setAccountType] = useState(ACCOUNT_TYPE.STUDENT)
-
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -23,10 +21,8 @@ function SignupForm() {
     password: "",
     confirmPassword: "",
   })
-
   const [showPassword, setShowPassword] = useState(false)
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
-
   const { firstName, lastName, email, password, confirmPassword } = formData
 
   // Handle input fields, when some value changes

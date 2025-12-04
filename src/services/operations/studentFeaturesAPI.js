@@ -83,6 +83,7 @@ export async function BuyCourse(
         verifyPayment({ ...response, courses }, token, navigate, dispatch)
       },
     }
+    
     const paymentObject = new window.Razorpay(options)
 
     paymentObject.open()

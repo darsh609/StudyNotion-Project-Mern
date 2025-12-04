@@ -27,11 +27,14 @@ function Catalog() {
           (ct) => ct.name.split(" ").join("-").toLowerCase() === catalogName
         )[0]._id
         setCategoryId(category_id)
-      } catch (error) {
+
+      } 
+      catch (error) {
         console.log("Could not fetch Categories.", error)
       }
     })()
   }, [catalogName])
+
   useEffect(() => {
     if (categoryId) {
       ;(async () => {
